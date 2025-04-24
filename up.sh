@@ -36,6 +36,8 @@
 # remove a file online but keep it locally
 # https://www.baeldung.com/ops/git-remove-file-without-deleting-it
 # git rm --cached file.txt
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_github
 
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
@@ -51,8 +53,7 @@ workdir=$(pwd)
 # cp -v Personal/settings/ubuntu-chadwm/config.fish Personal/settings/ubuntu-chadwm/dotfiles/fish/config.fish
 # cp -v Personal/settings/mint-chadwm/config.fish Personal/settings/mint-chadwm/dotfiles/fish/config.fish
 
-eval $(ssh-agent)
-ssh-add ~/.ssh/id_github
+
 
 # Below command will backup everything inside the project folder
 git add --all .
