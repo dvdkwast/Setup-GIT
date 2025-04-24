@@ -51,6 +51,9 @@ workdir=$(pwd)
 # cp -v Personal/settings/ubuntu-chadwm/config.fish Personal/settings/ubuntu-chadwm/dotfiles/fish/config.fish
 # cp -v Personal/settings/mint-chadwm/config.fish Personal/settings/mint-chadwm/dotfiles/fish/config.fish
 
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_github
+
 # Below command will backup everything inside the project folder
 git add --all .
 
