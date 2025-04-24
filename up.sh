@@ -51,23 +51,6 @@ workdir=$(pwd)
 # cp -v Personal/settings/ubuntu-chadwm/config.fish Personal/settings/ubuntu-chadwm/dotfiles/fish/config.fish
 # cp -v Personal/settings/mint-chadwm/config.fish Personal/settings/mint-chadwm/dotfiles/fish/config.fish
 
-# rm $workdir/mirrorlist
-# touch $workdir/mirrorlist
-# echo "## Best Arch Linux servers worldwide from arcolinux-nemesis
-
-# Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch
-# Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch
-# Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-# Server = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-# Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
-# Server = http://mirror.osbeck.com/archlinux/\$repo/os/\$arch" | tee $workdir/mirrorlist
-# echo
-# echo "getting mirrorlist"
-# wget "https://archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4&ip_version=6" -O ->> $workdir/mirrorlist
-# sed -i "s/#Server/Server/g" $workdir/mirrorlist
-
-# cp -v /home/erik/ARCO/ARCOLINUX/arcolinux-system-config/usr/local/bin/get-me-started /home/erik/DATA/arcolinux-nemesis/get-me-started
-
 # Below command will backup everything inside the project folder
 git add --all .
 
